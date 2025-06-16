@@ -61,31 +61,42 @@ projectModal.addEventListener("click", (e) => {
 
 // Contact form submission
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  
-  const formData = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    subject: document.getElementById('subject').value,
-    message: document.getElementById('message').value
-  };
+    e.preventDefault();
 
-  try {
-    const response = await fetch('https://my-portfolio-icyt.onrender.com/api/contact/send-email', { // Note: Removed /send-email
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json', // Changed to JSON
-      },
-      body: JSON.stringify(formData)
-    });
-    
-    const result = await response.json();
-    alert(result.message);
-    e.target.reset();
-  } catch (error) {
-    alert('Error sending message: ' + error.message);
-  }
-});
+    const button = document.getElementById('submit-button');
+    const spinner = document.getElementById('spinner');
+
+    // Show spinner and disable button
+    spinner.classList.remove('hidden');
+    button.disabled = true;
+
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value
+    };
+
+    try {
+      const response = await fetch('https://my-portfolio-icyt.onrender.com/api/contact/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+      alert(result.message);
+      e.target.reset();
+    } catch (error) {
+      alert('Error sending message: ' + error.message);
+    } finally {
+      // Always hide spinner and re-enable button
+      spinner.classList.add('hidden');
+      button.disabled = false;
+    }
+  });
 
 // Add active class to nav links based on scroll position
 window.addEventListener("scroll", () => {
