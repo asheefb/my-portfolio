@@ -901,11 +901,34 @@
                   </div>
 
                   <button
-                    type="submit"
-                    class="w-full bg-blue-800 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
-                  >
-                    Send Message
-                  </button>
+  id="submit-button"
+  type="submit"
+  class="w-full bg-blue-800 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition flex justify-center items-center gap-2"
+>
+  <span>Send Message</span>
+  <svg
+    id="spinner"
+    class="animate-spin h-5 w-5 text-white hidden"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      class="opacity-25"
+      cx="12"
+      cy="12"
+      r="10"
+      stroke="currentColor"
+      stroke-width="4"
+    ></circle>
+    <path
+      class="opacity-75"
+      fill="currentColor"
+      d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8h4z"
+    ></path>
+  </svg>
+</button>
+
                 </form>
               </div>
             </div>
@@ -950,7 +973,7 @@
               <i class="fab fa-github text-xl"></i>
             </a>
             <a
-              href="mailto:asheefkb80629@gmail.com"
+              href="mailto:asheefkb@gmail.com"
               class="hover:text-blue-400 transition"
             >
               <i class="fas fa-envelope text-xl"></i>
