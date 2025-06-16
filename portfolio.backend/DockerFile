@@ -1,0 +1,14 @@
+# Use OpenJDK 17 as the base image
+FROM openjdk:17-jdk-slim
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy the JAR from the Maven build (adjust filename)
+COPY target/*.jar app.jar
+
+# Expose port (Render injects it as an env variable)
+ENV PORT=8080
+
+# Start the Spring Boot application
+CMD ["java", "-jar", "app.jar"]
