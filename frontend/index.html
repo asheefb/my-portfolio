@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en" class="theme light EHoceA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asheef B - Java Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+      <!-- Navigation content remains the same -->
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold"
+          >Asheef<span class="text-gray-700"> B</span></a
+        >
+
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#about"
+            class="text-gray-700 hover:text-blue-800 transition text-blue-800 font-medium"
+            >About</a
+          >
+          <a href="#skills" class="text-gray-700 hover:text-blue-800 transition"
+            >Skills</a
+          >
+          <a
+            href="#experience"
+            class="text-gray-700 hover:text-blue-800 transition"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-700 hover:text-blue-800 transition"
+            >Projects</a
+          >
+          <a
+            href="#education"
+            class="text-gray-700 hover:text-blue-800 transition"
+            >Education</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-700 hover:text-blue-800 transition"
+            >Contact</a
+          >
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-lg absolute w-full"
+      >
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+          <a
+            href="#about"
+            class="text-gray-700 hover:text-blue-800 transition py-2 text-blue-800 font-medium"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-gray-700 hover:text-blue-800 transition py-2"
+            >Skills</a
+          >
+          <a
+            href="#experience"
+            class="text-gray-700 hover:text-blue-800 transition py-2"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-700 hover:text-blue-800 transition py-2"
+            >Projects</a
+          >
+          <a
+            href="#education"
+            class="text-gray-700 hover:text-blue-800 transition py-2"
+            >Education</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-700 hover:text-blue-800 transition py-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="animated-bg pt-28 pb-20 text-white">
+      <!-- Hero content remains the same -->
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Asheef B</h1>
+          <div class="h-12 overflow-hidden">
+            <h2 class="text-2xl md:text-3xl font-medium typing-effect">
+              Java Developer
+            </h2>
+          </div>
+          <p class="mt-6 text-lg md:text-xl max-w-lg mx-auto md:mx-0">
+            Backend developer with expertise in Spring Boot, Microservices, and
+            database management.
+          </p>
+          <div
+            class="mt-8 flex flex-wrap justify-center md:justify-start gap-4"
+          >
+            <a
+              href="#contact"
+              class="bg-white text-blue-800 px-6 py-3 rounded-full font-medium hover:bg-blue-100 transition"
+              >Get In Touch</a
+            >
+            <a
+              href="#projects"
+              class="bg-transparent border-2 border-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-blue-800 transition"
+              >View Projects</a
+            >
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <div class="w-64 h-64 rounded-full bg-white p-2 shadow-lg">
+            <div
+              class="w-full h-full rounded-full overflow-hidden flex items-center justify-center"
+            >
+              <img
+                src="images/asheefb.jpg"
+                alt="Asheef B"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <!-- About content remains the same -->
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <div class="bg-blue-50 p-8 rounded-lg shadow-md max-w-lg mx-auto">
+              <p class="text-gray-700 leading-relaxed">
+                Java Backend Developer with hands-on experience in Spring Boot,
+                MySQL, MongoDB, and microservices architecture. Currently
+                working at Entoo as an Associate Developer. Skilled in building
+                scalable backend systems, RESTful APIs, and using DevOps tools
+                like Jenkins, Git, and Jira. Enthusiastic about clean code and
+                continuous learning.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                  >English</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                  >Hindi</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                  >Kannada</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div
+                class="card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500"
+              >
+                <div class="text-blue-500 text-3xl mb-4">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Backend Development</h3>
+                <p class="text-gray-600">
+                  Specialized in Java, Spring Boot, and microservices
+                  architecture.
+                </p>
+              </div>
+              <div
+                class="card bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500"
+              >
+                <div class="text-green-500 text-3xl mb-4">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Database Management</h3>
+                <p class="text-gray-600">
+                  Experienced with both SQL (MySQL) and NoSQL (MongoDB)
+                  databases.
+                </p>
+              </div>
+              <div
+                class="card bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500"
+              >
+                <div class="text-purple-500 text-3xl mb-4">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Cloud Services</h3>
+                <p class="text-gray-600">
+                  Worked with AWS S3, SQS, and other cloud services.
+                </p>
+              </div>
+              <div
+                class="card bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500"
+              >
+                <div class="text-yellow-500 text-3xl mb-4">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">DevOps</h3>
+                <p class="text-gray-600">
+                  Familiar with Git, GitHub, Jenkins, and Agile methodologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+      <!-- Skills content remains the same -->
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">Technical Skills</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="text-blue-600 text-3xl mb-4">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full"
+                >Java</span
+              >
+              <span
+                class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full"
+                >JavaScript</span
+              >
+              <span
+                class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full"
+                >CSS</span
+              >
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="text-green-600 text-3xl mb-4">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Backend</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full"
+                >Spring Boot</span
+              >
+              <span
+                class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full"
+                >Microservices</span
+              >
+              <span
+                class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full"
+                >REST APIs</span
+              >
+              <span
+                class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full"
+                >JUnit (Mokito)</span
+              >
+              <span
+                class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full"
+                >JWT Authentication</span
+              >
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="text-purple-600 text-3xl mb-4">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Databases</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full"
+                >MySQL</span
+              >
+              <span
+                class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full"
+                >MongoDB</span
+              >
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="text-red-600 text-3xl mb-4">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Messaging &amp; Queues</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-pill bg-red-100 text-red-800 px-4 py-2 rounded-full"
+                >RabbitMQ</span
+              >
+              <span
+                class="skill-pill bg-red-100 text-red-800 px-4 py-2 rounded-full"
+                >AWS SQS</span
+              >
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="text-yellow-600 text-3xl mb-4">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Tools &amp; DevOps</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full"
+                >Git</span
+              >
+              <span
+                class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full"
+                >GitHub</span
+              >
+              <span
+                class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full"
+                >Jenkins</span
+              >
+              <span
+                class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full"
+                >Jira</span
+              >
+              <span
+                class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full"
+                >Bugzilla</span
+              >
+              <span
+                class="skill-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full"
+                >AWS S3</span
+              >
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="text-indigo-600 text-3xl mb-4">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Frontend (Basic)</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full"
+                >React.js</span
+              >
+              <span
+                class="skill-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full"
+                >Bootstrap</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">Other Skills</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-pill bg-gray-100 text-gray-800 px-4 py-2 rounded-full"
+                >Data Structures &amp; Algorithms</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+      <!-- Experience content remains the same -->
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">
+          Professional Experience
+        </h2>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="relative pl-8 border-l-2 border-blue-500">
+            <div class="timeline-item mb-12">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
+                >
+                  <h3 class="text-xl font-bold text-blue-800">
+                    Associate Developer
+                  </h3>
+                  <div class="flex items-center mt-2 md:mt-0">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                      >Dec 2024 - Present</span
+                    >
+                  </div>
+                </div>
+                <h4 class="text-lg font-medium text-gray-700 mb-4">Entoo</h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                  <li>
+                    Developed and maintained backend microservices using Java
+                    and Spring Boot.
+                  </li>
+                  <li>
+                    Built and optimized modules for data automation,
+                    scheduler-based jobs, and rule-based logic.
+                  </li>
+                  <li>
+                    Designed and implemented RESTful APIs with secure data flow
+                    and proper validation.
+                  </li>
+                  <li>
+                    Collaborated in an Agile environment using Git, GitHub,
+                    Jenkins, Jira, and Bugzilla.
+                  </li>
+                  <li>
+                    Contributed to business-critical features and production
+                    support tasks involving both MySQL and MongoDB.
+                  </li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span
+                    class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs"
+                    >Java</span
+                  >
+                  <span
+                    class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs"
+                    >Spring Boot</span
+                  >
+                  <span
+                    class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs"
+                    >MySQL</span
+                  >
+                  <span
+                    class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs"
+                    >MongoDB</span
+                  >
+                  <span
+                    class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs"
+                    >Microservices</span
+                  >
+                  <span
+                    class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs"
+                    >REST APIs</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+      <!-- Projects content remains the same -->
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">Projects</h2>
+
+        <div class="max-w-5xl mx-auto">
+          <div
+            class="project-card bg-white rounded-lg shadow-lg overflow-hidden mb-8"
+          >
+            <div class="md:flex">
+              <div
+                class="md:w-1/3 bg-blue-800 text-white p-6 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <i class="fas fa-briefcase text-5xl mb-4"></i>
+                  <h3 class="text-xl font-bold">Freelance Hub</h3>
+                  <p class="text-blue-200">Job Marketplace Platform</p>
+                </div>
+              </div>
+              <div class="md:w-2/3 p-6">
+                <div class="mb-4">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Project Overview
+                  </h4>
+                  <p class="text-gray-600">
+                    A comprehensive job posting and hiring platform for
+                    freelancers built with Spring Boot and React.js.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Key Features
+                  </h4>
+                  <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                    <li>
+                      Implemented microservices with API Gateway and Eureka
+                      Service Discovery.
+                    </li>
+                    <li>
+                      Utilized MongoDB for unstructured data (user profiles,
+                      messages) and MySQL for structured data (jobs,
+                      applications).
+                    </li>
+                    <li>
+                      Integrated JWT-based authentication and role-based access
+                      control.
+                    </li>
+                    <li>
+                      Managed secure file uploads via AWS S3, and implemented
+                      queues using RabbitMQ and AWS SQS.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mt-6">
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >Spring Boot</span
+                  >
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >React.js</span
+                  >
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >Microservices</span
+                  >
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >MongoDB</span
+                  >
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >MySQL</span
+                  >
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >AWS S3</span
+                  >
+                  <span
+                    class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    >RabbitMQ</span
+                  >
+                </div>
+
+                <div class="mt-6 flex space-x-4">
+                  <button
+                    id="demo-btn"
+                    class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                  >
+                    View Demo
+                  </button>
+                  <button
+                    id="details-btn"
+                    class="border border-blue-800 text-blue-800 px-4 py-2 rounded hover:bg-blue-50 transition"
+                  >
+                    Project Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Modal -->
+      <div
+        id="project-modal"
+        class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden"
+      >
+        <div
+          class="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+        >
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-6">
+              <h3 class="text-2xl font-bold text-gray-800">
+                Freelance Hub - Project Details
+              </h3>
+              <button
+                id="close-modal"
+                class="text-gray-500 hover:text-gray-700"
+              >
+                <i class="fas fa-times text-xl"></i>
+              </button>
+            </div>
+
+            <div class="space-y-6">
+              <div>
+                <h4 class="text-lg font-semibold text-blue-800 mb-2">
+                  Project Architecture
+                </h4>
+                <p class="text-gray-600">
+                  The application follows a microservices architecture with the
+                  following components:
+                </p>
+                <ul class="list-disc pl-5 text-gray-600 mt-2 space-y-1">
+                  <li>API Gateway for routing and load balancing</li>
+                  <li>Eureka Service Registry for service discovery</li>
+                  <li>
+                    User Service for authentication and profile management
+                  </li>
+                  <li>
+                    Job Service for job posting and application management
+                  </li>
+                  <li>
+                    Messaging Service for communication between freelancers and
+                    clients
+                  </li>
+                  <li>
+                    Notification Service for email and in-app notifications
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="text-lg font-semibold text-blue-800 mb-2">
+                  Technical Implementation
+                </h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                  <li>
+                    Implemented JWT-based authentication with refresh token
+                    mechanism
+                  </li>
+                  <li>
+                    Used MongoDB for storing user profiles, messages, and
+                    notifications
+                  </li>
+                  <li>
+                    Implemented MySQL for structured data like jobs,
+                    applications, and reviews
+                  </li>
+                  <li>
+                    Integrated AWS S3 for secure file uploads (portfolios,
+                    attachments)
+                  </li>
+                  <li>
+                    Used RabbitMQ for asynchronous processing of notifications
+                  </li>
+                  <li>Implemented real-time messaging using WebSockets</li>
+                  <li>
+                    Created a responsive frontend using React.js and Bootstrap
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="text-lg font-semibold text-blue-800 mb-2">
+                  Challenges &amp; Solutions
+                </h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                  <li>
+                    Challenge: Service communication reliability<br />
+                    Solution: Implemented circuit breaker pattern using
+                    Resilience4j
+                  </li>
+                  <li>
+                    Challenge: Data consistency across services<br />
+                    Solution: Used event-driven architecture with RabbitMQ
+                  </li>
+                  <li>
+                    Challenge: Secure file uploads<br />
+                    Solution: Implemented pre-signed URLs with AWS S3
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+      <!-- Education content remains the same -->
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">Education</h2>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="md:flex">
+              <div
+                class="md:w-1/3 bg-blue-800 text-white p-6 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <i class="fas fa-graduation-cap text-5xl mb-4"></i>
+                  <h3 class="text-xl font-bold">Bachelor of Engineering</h3>
+                  <p class="text-blue-200">Computer Science</p>
+                </div>
+              </div>
+              <div class="md:w-2/3 p-6">
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
+                >
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Sampoorna Institute of Technology and Research
+                  </h3>
+                  <div class="flex items-center mt-2 md:mt-0">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                      >Sep 2020 - Mar 2024</span
+                    >
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Affiliated to Visvesvaraya Technological University (VTU)
+                </p>
+                <div class="mb-4">
+                  <span class="font-semibold text-gray-700">CGPA:</span>
+                  <span class="text-gray-600">7.8/10</span>
+                </div>
+                <div class="mb-4">
+                  <h4 class="font-semibold text-gray-700">
+                    Relevant Coursework:
+                  </h4>
+                  <p class="text-gray-600">
+                    Backend Development and Frontend Development
+                  </p>
+                </div>
+                <div class="mt-6">
+                  <h4 class="font-semibold text-gray-700">Certifications:</h4>
+                  <div class="mt-2 flex items-center bg-blue-50 p-3 rounded-lg">
+                    <i class="fas fa-certificate text-blue-500 mr-3"></i>
+                    <div>
+                      <p class="font-medium text-gray-800">
+                        Java Full Stack Development
+                      </p>
+                      <p class="text-gray-600 text-sm">JSpiders</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <!-- Contact content remains the same -->
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">Get In Touch</h2>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="md:flex">
+              <div class="md:w-1/2 gradient-bg text-white p-8">
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                <div class="space-y-6">
+                  <div class="flex items-center">
+                    <!-- <div
+                      class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-phone"></i>
+                    </div> -->
+                    <!-- <div>
+                      <p class="text-sm text-blue-100">Phone</p>
+                      <p class="font-medium">+91-8431998860</p>
+                    </div> -->
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blue-100">Email</p>
+                      <p class="font-medium">asheefkb80629@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-4"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blue-100">LinkedIn</p>
+                      <p class="font-medium">linkedin.com/in/asheefk</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-4"
+                    >
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-blue-100">GitHub</p>
+                      <p class="font-medium">github.com/asheefb</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-12">
+                  <h4 class="text-lg font-semibold mb-4">Connect With Me</h4>
+                  <div class="flex space-x-4">
+                    <a
+                      href="https://linkedin.com/in/asheefk"
+                      target="_blank"
+                      class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      href="https://github.com/asheefb"
+                      target="_blank"
+                      class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="mailto:asheefkb80629@gmail.com"
+                      class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition"
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="md:w-1/2 p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                  Send Me a Message
+                </h3>
+                <form id="contact-form" class="space-y-4">
+                  <div>
+                    <label for="name" class="block text-gray-700 mb-2"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Your Name"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="email" class="block text-gray-700 mb-2"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Your Email"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="subject" class="block text-gray-700 mb-2"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Subject"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="message" class="block text-gray-700 mb-2"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      rows="4"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full bg-blue-800 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-8 text-gray-500 text-sm">
+            <p>
+              Note: For any inquiries, please feel free to reach out via
+              Get In Touch form or directly through email or phone.
+              I look forward to connecting with you! Thank you for visiting my portfolio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <!-- Footer content remains the same -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-2xl font-bold">
+              Asheef<span class="text-blue-400"> B</span>
+            </h2>
+            <p class="text-gray-400 mt-2">Java Developer</p>
+          </div>
+
+          <div class="flex space-x-6">
+            <a
+              href="https://linkedin.com/in/asheefk"
+              target="_blank"
+              class="hover:text-blue-400 transition"
+            >
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="https://github.com/asheefb"
+              target="_blank"
+              class="hover:text-blue-400 transition"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a
+              href="mailto:asheefkb80629@gmail.com"
+              class="hover:text-blue-400 transition"
+            >
+              <i class="fas fa-envelope text-xl"></i>
+            </a>
+            <!-- <a href="tel:+918431998860" class="hover:text-blue-400 transition">
+              <i class="fas fa-phone text-xl"></i>
+            </a> -->
+          </div>
+        </div>
+
+        <hr class="border-gray-800 my-8" />
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2024 Asheef B. All rights reserved.
+          </p>
+
+          <div class="flex space-x-8">
+            <a
+              href="#about"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Skills</a
+            >
+            <a
+              href="#experience"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Experience</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
