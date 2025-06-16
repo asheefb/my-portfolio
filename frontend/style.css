@@ -90,5 +90,19 @@ body {
     }
 }
 
+/* Add this to your CSS file */
+@media (max-width: 768px) {
+    footer .flex.space-x-8 {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 0 16px;
+    }
+    
+    footer .flex.space-x-8 a {
+      padding: 4px 8px;
+      white-space: nowrap;
+    }
+  }
 /* All the Tailwind CSS styles from the original file would go here */
 /* This would be a very long section with all the utility classes */

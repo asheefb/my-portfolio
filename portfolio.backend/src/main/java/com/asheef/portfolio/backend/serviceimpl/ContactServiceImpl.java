@@ -32,7 +32,7 @@ public class ContactServiceImpl implements ContactService {
 
             return ResponseEntity.ok(
                     ResponseBody.builder()
-                            .message("Email sent successfully")
+                            .message("Thank you for contacting me! I will get back to you soon.")
                             .data("Success")
                             .statusCode(200)
                             .build()
