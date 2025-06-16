@@ -71,7 +71,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
   };
 
   try {
-    const response = await fetch('http://localhost:8080/api/contact/send-email', { // Note: Removed /send-email
+    const response = await fetch('https://my-portfolio-icyt.onrender.com/api/contact/send-email', { // Note: Removed /send-email
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', // Changed to JSON
